@@ -13,8 +13,8 @@ public class exercicioSogro3 {
         int saida = numDigitado;
 
         while (numDigitado > 0 ) {
-
-            System.out.println(numDigitado --);
+            System.out.println(num
+Digitado --);
             saida -= 1;
         }
         System.out.println("FIM");
