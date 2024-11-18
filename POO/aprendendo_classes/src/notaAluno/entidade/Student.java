@@ -9,8 +9,10 @@ public class Student {
 
         double resultado = nota1 + nota2 + nota3;
         if (resultado >= 60 && resultado <= 100) {
+            System.out.println("Aluno: " + nome);
             System.out.print("Passou.  RESULTADO FINAL: ");
         } else if (resultado >= 0 && resultado <= 59) {
+            System.out.println("Aluno: " + nome);
             System.out.println("Reprovado");
             System.out.printf("Pontos faltantes: %.2f%n", 60 - resultado);
             System.out.printf("Nota final: ");
