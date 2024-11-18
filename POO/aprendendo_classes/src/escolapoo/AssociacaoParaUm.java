@@ -1,6 +1,6 @@
 package escolapoo;
 
-import escola.Turma;
+import POO.aprendendo_classes.src.escolapoo.escola.Turma;
 
 public class AssociacaoParaUm {
 

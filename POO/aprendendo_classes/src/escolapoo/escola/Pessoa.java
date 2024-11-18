@@ -1,4 +1,4 @@
-package escola;
+package POO.aprendendo_classes.src.escolapoo.escola;
 
 public class Pessoa {
 

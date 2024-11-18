@@ -1,6 +1,6 @@
 package escolapoo;
 
-import escola.Disciplina;
+import POO.aprendendo_classes.src.escolapoo.escola.Disciplina;
 
 public class Escolapoo {
 

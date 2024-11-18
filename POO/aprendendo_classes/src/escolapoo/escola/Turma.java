@@ -1,4 +1,4 @@
-package escola;
+package POO.aprendendo_classes.src.escolapoo.escola;
 
 import java.util.ArrayList;
 
