@@ -6,6 +6,13 @@ public class Produto {
     public double preco;
     public int quantidade;
 
+    public Produto(String name, double preco, int quantidade) {
+
+        this.name = name;
+        this.preco = preco;
+        this.quantidade = quantidade;
+    }
+
     public double totalValueInStock() {
         return preco * quantidade;
     }
@@ -25,6 +32,6 @@ public class Produto {
                 + ", "
                 + quantidade
                 + " unidades, Total: $"
-                + String.format("%.2f",totalValueInStock());
+                + String.format("%.2f", totalValueInStock());
     }
 }
