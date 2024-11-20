@@ -25,6 +25,10 @@ public class Aplicacao {
 
         Produto produto = new Produto(name,preco,quantidade);
 
+        produto.setName("Computador");
+        System.out.println("Nome atualizado teste: " + produto.getName());
+
+
         System.out.println();
         System.out.println("Código do produto: "+ produto);
 
@@ -43,6 +47,7 @@ public class Aplicacao {
 
         System.out.println();
         System.out.println("Produto atualizado: "+ produto);
+
 
 
 

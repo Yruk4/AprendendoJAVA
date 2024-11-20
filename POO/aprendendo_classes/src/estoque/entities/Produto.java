@@ -13,6 +13,36 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
+    public Produto(String name, double preco) {
+        this.name = name;
+        this.preco = preco;
+    }
+
+    public Produto() {
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPreco(){
+        return preco;
+    }
+
+    public void setPreco(double preco){
+        this.preco = preco;
+    }
+
+    public int getQuantidade(){
+        return quantidade;
+    }
+
+
     public double totalValueInStock() {
         return preco * quantidade;
     }
