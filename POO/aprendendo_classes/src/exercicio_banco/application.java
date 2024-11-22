@@ -21,7 +21,7 @@ public class application {
 
         System.out.println("Você deseja adicionar um saldo inicial? s/n");
         String resposta = sc.next();
-        if (resposta != "n" && resposta != "N") {
+        if (resposta.equalsIgnoreCase("s")) {
             System.out.println("Digite o valor a adicionar");
             saldo = sc.nextDouble();
         }
@@ -48,5 +48,8 @@ public class application {
         System.out.printf("Saldo atual: %.2f%n", cliente.getSaldo());
 
         sc.close();
+
+
     }
 }
+
