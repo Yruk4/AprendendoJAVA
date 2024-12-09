@@ -30,25 +30,20 @@ public class application {
                 if (sacar > saldo) {
                     System.out.println("Saldo insuficiente.");
                     System.out.println("Saldo disponivel: " + david.getSaldo());
-
                 } else {
-                    saldo -= sacar;
-                    david.setSaldo(saldo);
+                    david.sacar(sacar);
                     System.out.println("Saldo atualizado: " + david.getSaldo());
                     break;
                 }
-
                 break;
-
             case 2:
-
                 System.out.println("Insira o valor para depositar:");
                 david.depositar(sc.nextDouble());
                 System.out.println("Saldo atualizado: " + david.getSaldo());
                 break;
-
             case 3:
                 System.out.println("Saldo disponivel: " + david.exibirSaldo());
+                System.out.println();
                 break;
 
             default:
