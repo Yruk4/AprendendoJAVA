@@ -13,22 +13,28 @@ public class Aplicacao {
         Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
 
-        Produto produto = new Produto();
-
-        System.out.println("Insira o código do produto");
+        System.out.println("Insira os dados do produto.");
         System.out.print("Nome: ");
+        String name = sc.nextLine();
 
-        produto.name = sc.nextLine();
         System.out.print("Preco: ");
-        produto.preco = sc.nextDouble();
+        double preco = sc.nextDouble();
+
         System.out.print("Quantidade em estoque: ");
-        produto.quantidade = sc.nextInt();
+        int quantidade = sc.nextInt();
+
+        Produto produto = new Produto(name,preco,quantidade);
+
+        produto.setName("Computador");
+        System.out.println("Nome atualizado teste: " + produto.getName());
+
+
         System.out.println();
         System.out.println("Código do produto: "+ produto);
 
         System.out.println();
         System.out.print("Entre com o número de produtos para serem adicionados ao Estoque: ");
-        int quantidade = sc.nextInt();
+        quantidade = sc.nextInt();
         produto.addProdutos(quantidade);
 
         System.out.println();
@@ -41,6 +47,7 @@ public class Aplicacao {
 
         System.out.println();
         System.out.println("Produto atualizado: "+ produto);
+
 
 
 
