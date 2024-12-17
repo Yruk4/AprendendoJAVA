@@ -29,24 +29,54 @@ public class application {
 
                 if (sacar > saldo) {
                     System.out.println("Saldo insuficiente.");
-                    System.out.println("Saldo disponivel: " + david.getSaldo());
+                    System.out.println("Saldo disponivel: R$" + david.getSaldo());
                 } else {
                     david.sacar(sacar);
-                    System.out.println("Saldo atualizado: " + david.getSaldo());
+                    System.out.println("Saldo atualizado: R$" + david.getSaldo());
                     break;
                 }
                 break;
             case 2:
                 System.out.println("Insira o valor para depositar:");
                 david.depositar(sc.nextDouble());
-                System.out.println("Saldo atualizado: " + david.getSaldo());
+                System.out.println("Saldo atualizado: R$" + david.getSaldo());
                 break;
             case 3:
-                System.out.println("Saldo disponivel: " + david.exibirSaldo());
+                System.out.println("Saldo disponivel: R$" + david.exibirSaldo());
                 System.out.println();
-                break;
+                System.out.println();
+                System.out.println("Deseja fazer outra operação?");
+                System.out.println("1- Sim");
+                System.out.println("2- Não");
+                resposta = sc.nextInt();
+                if (resposta == 1) {
+                    switch (resposta) {
+                        case 1:
 
-            default:
+                            System.out.println("Insira o valor para sacar:");
+                            sacar = sc.nextDouble();
+
+
+                            if (sacar > saldo) {
+                                System.out.println("Saldo insuficiente.");
+                                System.out.println("Saldo disponivel: R$" + david.getSaldo());
+                            } else {
+                                david.sacar(sacar);
+                                System.out.println("Saldo atualizado: R$" + david.getSaldo());
+                                break;
+                            }
+                            break;
+                        case 2:
+                            System.out.println("Insira o valor para depositar:");
+                            david.depositar(sc.nextDouble());
+                            System.out.println("Saldo atualizado: R$" + david.getSaldo());
+                            break;
+                        case 3:
+                            System.out.println("Saldo disponivel: R$" + david.exibirSaldo());
+                            System.out.println();
+                            break;
+
+                        default:
                 while (resposta != 1 && resposta != 2 && resposta != 3) {
 
                     System.out.println("Digite uma das opções: ");
@@ -64,12 +94,12 @@ public class application {
 
                         if (sacar > saldo) {
                             System.out.println("Saldo insuficiente.");
-                            System.out.println("Saldo disponivel: " + david.getSaldo());
+                            System.out.println("Saldo disponivel: R$" + david.getSaldo());
 
                         } else {
                             saldo -= sacar;
                             david.setSaldo(saldo);
-                            System.out.println("Saldo atualizado: " + david.getSaldo());
+                            System.out.println("Saldo atualizado: R$" + david.getSaldo());
                             break;
                         }
 
@@ -79,11 +109,11 @@ public class application {
 
                         System.out.println("Insira o valor para depositar:");
                         david.depositar(sc.nextDouble());
-                        System.out.println("Saldo atualizado: " + david.getSaldo());
+                        System.out.println("Saldo atualizado: R$" + david.getSaldo());
                         break;
 
                     case 3:
-                        System.out.println("Saldo disponivel: " + david.exibirSaldo());
+                        System.out.println("Saldo disponivel: R$" + david.exibirSaldo());
                         break;
 
 
