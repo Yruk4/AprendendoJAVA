@@ -26,8 +26,6 @@ public class Exercicio4 {
             System.out.print("Nota final: " + provaFinal);
         }
 
-        
-
     }
 }
 
