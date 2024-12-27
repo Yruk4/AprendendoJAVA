@@ -29,7 +29,7 @@ public class Dados {
     }
 
     public double adicionarSaldo(double saldoAdicionado) {
-        this.saldo += saldoAdicionado;;
+        this.saldo += saldoAdicionado;
         return this.saldo;
     }
 
@@ -38,8 +38,6 @@ public class Dados {
         this.saldo -= 5;
         return this.saldo;
     }
-
-
 
 
 }

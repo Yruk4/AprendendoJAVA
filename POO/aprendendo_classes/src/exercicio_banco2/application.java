@@ -77,46 +77,48 @@ public class application {
                             break;
 
                         default:
-                while (resposta != 1 && resposta != 2 && resposta != 3) {
+                            while (resposta != 1 && resposta != 2 && resposta != 3) {
 
-                    System.out.println("Digite uma das opções: ");
-                    System.out.println("1º - Saque");
-                    System.out.println("2º - Deposito");
-                    System.out.println("3º - Ver saldo");
-                    resposta = sc.nextInt();
-                }
-                switch (resposta) {
-                    case 1:
+                                System.out.println("Digite uma das opções: ");
+                                System.out.println("1º - Saque");
+                                System.out.println("2º - Deposito");
+                                System.out.println("3º - Ver saldo");
+                                resposta = sc.nextInt();
+                            }
+                            switch (resposta) {
+                                case 1:
 
-                        System.out.println("Insira o valor para sacar:");
-                        sacar = sc.nextDouble();
-
-
-                        if (sacar > saldo) {
-                            System.out.println("Saldo insuficiente.");
-                            System.out.println("Saldo disponivel: R$" + david.getSaldo());
-
-                        } else {
-                            saldo -= sacar;
-                            david.setSaldo(saldo);
-                            System.out.println("Saldo atualizado: R$" + david.getSaldo());
-                            break;
-                        }
-
-                        break;
-
-                    case 2:
-
-                        System.out.println("Insira o valor para depositar:");
-                        david.depositar(sc.nextDouble());
-                        System.out.println("Saldo atualizado: R$" + david.getSaldo());
-                        break;
-
-                    case 3:
-                        System.out.println("Saldo disponivel: R$" + david.exibirSaldo());
-                        break;
+                                    System.out.println("Insira o valor para sacar:");
+                                    sacar = sc.nextDouble();
 
 
+                                    if (sacar > saldo) {
+                                        System.out.println("Saldo insuficiente.");
+                                        System.out.println("Saldo disponivel: R$" + david.getSaldo());
+
+                                    } else {
+                                        saldo -= sacar;
+                                        david.setSaldo(saldo);
+                                        System.out.println("Saldo atualizado: R$" + david.getSaldo());
+                                        break;
+                                    }
+
+                                    break;
+
+                                case 2:
+
+                                    System.out.println("Insira o valor para depositar:");
+                                    david.depositar(sc.nextDouble());
+                                    System.out.println("Saldo atualizado: R$" + david.getSaldo());
+                                    break;
+
+                                case 3:
+                                    System.out.println("Saldo disponivel: R$" + david.exibirSaldo());
+                                    break;
+
+
+                            }
+                    }
                 }
         }
     }
