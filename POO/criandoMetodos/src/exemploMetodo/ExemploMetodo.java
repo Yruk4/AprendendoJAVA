@@ -1,3 +1,5 @@
+package exemploMetodo;
+
 import java.util.Scanner;
 
 public class ExemploMetodo {
