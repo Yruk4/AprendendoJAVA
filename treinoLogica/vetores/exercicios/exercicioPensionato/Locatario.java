@@ -1,16 +1,17 @@
 package exercicios.exercicioPensionato;
 
-public class Locatarios {
+public class Locatario {
 
    private String nome;
    private String email;
    private int quarto;
 
-    public Locatarios(String nome, String email, int quarto) {
+    public Locatario(String nome, String email, int quarto) {
         this.nome = nome;
         this.email = email;
         this.quarto = quarto;
     }
+
 
     public String getNome() {
         return nome;

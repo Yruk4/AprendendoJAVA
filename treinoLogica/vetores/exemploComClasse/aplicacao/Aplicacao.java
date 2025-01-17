@@ -1,4 +1,3 @@
-package treinoLogica.vetores.exemploComClasse.aplicacao;
 
 import treinoLogica.vetores.exemploComClasse.entidade.Produto;
 
