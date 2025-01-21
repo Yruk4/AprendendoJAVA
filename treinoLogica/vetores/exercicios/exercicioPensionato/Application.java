@@ -1,4 +1,4 @@
-package exercicios.exercicioPensionato;
+package treinoLogica.vetores.exercicios.exercicioPensionato;
 
 import java.util.Scanner;
 

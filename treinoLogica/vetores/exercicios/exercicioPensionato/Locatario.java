@@ -1,3 +1,4 @@
+package treinoLogica.vetores.exercicios.exercicioPensionato;
 
 public class Locatario {
 
