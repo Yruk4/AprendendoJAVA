@@ -1,4 +1,3 @@
-package exercicios.exercicioPensionato;
 
 public class Locatario {
 
