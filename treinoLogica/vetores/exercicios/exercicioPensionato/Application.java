@@ -21,7 +21,7 @@ public class Application {
             while (numeroDoQuarto < 1 || numeroDoQuarto > 10 || vetor[numeroDoQuarto - 1] != null) {
                 if (vetor[numeroDoQuarto - 1] != null) {
                     System.out.println("Esse quarto já está ocupado. Escolha outro.");
-                }else{
+                } else {
                     System.out.println("Número inválido. Digite um número entre 1 e 10.");
                 }
                 System.out.print("Informe o número do quarto: ");
