@@ -1,4 +1,4 @@
-package treinoLogica.vetores;
+package exercicioFuncionario.entidade;
 
 public class Funcionario {
 

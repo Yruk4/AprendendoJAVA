@@ -1,4 +1,7 @@
-package treinoLogica.vetores;
+package exercicioFuncionario.aplicacao;
+
+
+import exercicioFuncionario.entidade.Funcionario;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,9 +49,6 @@ public class ExercicioArrayLIst {
         }
 
         System.out.println("Digite o ID do funcionario que vai receber o incremento de salario: ");
-        Integer funcionarioAumento = lista.indexOf(sc.nextInt(lista.ge));
-
-
 
     }
 }
